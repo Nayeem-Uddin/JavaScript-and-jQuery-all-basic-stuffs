@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function buttonclicked(){
+                var para = document.getElementsByTagName("p");
+           // para[0].style.fontSize = 22
+           // para[1].style.fontWeight = "bold"
+           // para[2].style.background = "red"
+
+           for(var i = 0; i<para.length;i++)
+           {
+               para[i].style.fontSize = 25;
+           }
+
+            }
+            
+
+
+        </script>
+        <body>
+            <p>para 1</p>
+            <p>para 2</p>
+            <p>para 3</p>
+            <br>
+
+            <button onclick="buttonclicked()">click me</button>
+            
+        </body>
+    </head>
+</html>

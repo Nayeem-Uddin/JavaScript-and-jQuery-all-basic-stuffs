@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+        
+        function validate()
+        {
+            var number = document.getElementById("number").value;
+            var regx = /^([a-z 0-9 \. -]+)@([a-z 0-9 -]+).([a-z]{2,8})(.[a-z])?$/
+            if(regx.test(number))
+            {   
+               
+               document.getElementById("lblemail").innerHTML="valid";
+               document.getElementById("lblemail").style.visibility="visible";
+               document.getElementById("lblemail").style.color="green";
+               return true;
+            }
+            else
+            {   
+              
+               document.getElementById("lblemail").innerHTML="invalid";
+               document.getElementById("lblemail").style.visibility="visible";
+               document.getElementById("lblemail").style.color="red";
+               return false;
+            }
+        }
+
+        </script>
+
+        <body>
+            <br>
+            <form onsubmit="return validate()" action="message.html">
+                <input type="text" id="number" placeholder="Email Address">
+                <br>
+    
+                <label id="lblemail" style="color: red; visibility:hidden;">Invalid number</label>
+                <br>
+    
+                <button type="submit">Submit</button>
+
+
+            </form>
+          
+
+        </body>
+    </head>
+</html>

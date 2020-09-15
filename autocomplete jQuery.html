@@ -1,0 +1,49 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="cs/style.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.structure.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.theme.css">
+
+
+    </head>
+        <h2>Autocomplete Widget in jQuery</h2>
+        <br><br>
+        
+        <div id="div1" class="divclass">
+
+            <label>search your destination </label>
+            <input type="text" id="input" placeholder="Destination">
+        
+        </div>
+
+    
+        
+    <body>
+        
+    </body>
+    <script src="1jquery.js"></script>
+    <script src="2jquery/jquery/jquery-ui.js"></script>
+    <script>
+
+      // var place = ["sundarban","rangamati","sajek valley","khagrachori",
+       //"chittagonj","kishorgonj","dhaka","dinajpur"]; 
+       $("#input").autocomplete({
+
+         source : ["sundarban","rangamati","sajek valley","khagrachori",
+         "chittagonj","kishorgonj","dhaka","dinajpur"]
+
+       },
+       {
+
+        autofocus : true,
+        delay : 0,
+        minLength : 2
+
+       }); 
+    
+
+
+    </script>
+</html>

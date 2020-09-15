@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+        
+            function destination()
+            {
+                var select = document.getElementById("placebox");
+                alert(select.options[select.selectedIndex].value);
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <select id="placebox">
+            <option value="Sajek valley">Sajek valley</option>
+            <option value="Bandarban">Bandarban</option>
+            <option value="Rangamati">Rangamati</option>
+            <option value="Chittagonj">Chittagonj</option>
+            
+            
+        </select>
+        <br><br>
+        <button onclick="destination()">search your destination</button>
+    </body>
+
+</html>

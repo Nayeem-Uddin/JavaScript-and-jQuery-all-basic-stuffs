@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="cs/style.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.structure.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <h2 id="h2">Draggable feature in jQuery UI</h2>
+        <div style="border: px solid black;">
+
+            <div id="div1" class="divclass">
+                <h3>
+                    CUBE-1
+                </h3>
+
+            </div>
+            <div id="div2" class="divclass">
+                <h3>
+                    CUBE-2
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        
+    </body>
+    <script src="1jquery.js"></script>
+    <script src="2jquery/jquery/jquery-ui.js"></script>
+    <script>
+
+        $(".divclass").draggable({
+
+           // axis : "x",
+            //axis : "y"
+            //containment:"parent"
+            //containment:"document",
+            cursor : "grabbing",
+            opacity : 0.5,
+            grid : [100,100],
+            snap : true,
+            snapTolerance : 100
+
+        });
+
+
+    </script>
+</html>

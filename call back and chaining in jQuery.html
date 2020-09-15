@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="cs/style.css">
+
+    </head>
+
+    <body>
+        <button id="btn">Toggling</button>
+        <br><br>
+        <div class="imageclass1">
+            <img id="img1" src="images/nayeem.png" width="250">
+        <div>
+            <br><br>
+
+        <div class="imageclass2">
+        <<br><br>
+        <img id="img2" src="images/nayeemsadia.png" width="400" height="300">
+        <br><br>
+        </div>
+        
+        
+    </body>
+    <script src="1jquery.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            function danger()
+            {
+                alert("slide toggle done");
+            }
+
+
+        $("#btn").click(function(){
+
+            //we can call up by callback function that is danger or alert here
+            //$("#img1").slideToggle(3000,danger);
+            //this is called chaining and we can do several task in one single line of code
+           $("#img1").slideUp(3000).slideDown(3000).fadeOut(3000).fadeIn(3000);
+
+
+        });    
+
+
+        });
+
+    </script>
+</html>

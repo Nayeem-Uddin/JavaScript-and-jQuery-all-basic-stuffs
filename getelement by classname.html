@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function buttonclicked()
+            {
+                var para = document.getElementsByClassName("same");
+                for ( var i =0 ; i< para.length ; i++)
+                {
+                    para[i].style.fontSize = 25;
+                }
+
+            }
+
+
+        </script>
+        <body>
+            <p class="same">para 1</p>
+            <p>para2</p>
+            <p class="same">para3</p>
+            <a class = "same" href="important link">important link</a>
+            <br><br>
+
+            <button onclick="buttonclicked()">click here</button>
+            
+
+        </body>
+    </head>
+</html>

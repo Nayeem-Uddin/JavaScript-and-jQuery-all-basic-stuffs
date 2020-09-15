@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script>
+
+
+        function validate()
+        {
+            var uname = document.getElementById("uname");
+            var pass = document.getElementById("pass");
+
+            if(uname.value.trim()=="")
+            {
+                alert("blank should not be allowed");
+                uname.style.border="solid 3px red";
+                document.getElementById("lbluname").style.visibility="visible";
+                return false;
+            }
+            else if(pass.value.trim()=="")
+            {
+               // alert("blank should not be allowed");
+                pass.style.border="solid 3px red";
+                document.getElementById("lblpass").style.visibility="visible";
+                return false;
+            }
+            else if(pass.value.trim().length>8=="")
+            {
+                alert("at least 8 characters");
+                return false;
+            }
+
+        }
+
+        </script>
+
+        <body>
+
+            <form onsubmit="return validate()" action="message.html">
+                 
+            <input type="text" id="uname" placeholder="Username">   
+            <label id="lbluname" style="color: red; visibility: hidden;">Invalid</label>
+            <br><br>
+            
+            <input type="password" id="pass" placeholder="password">
+            <label id="lblpass" style="color: red; visibility: hidden;">Invalid</label>
+            <br><br>
+            
+            <button type="submit">submit</button>
+
+
+            </form>
+           
+        </body>
+    </head>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script>
+        var opacity = 0;
+        var IntervalID = 0;
+
+        function fadeout()
+        {
+            IntervalID = setInterval(hide,500)
+        }
+        function fadein()
+        {
+            IntervalID = clearInterval(existance,500)
+        }
+
+        function hide()
+        {
+            
+            var img = document.getElementById("img");
+            opacity =Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity>0)
+            {
+                opacity = opacity-0.1
+                document.getElementById("img").style.opacity=opacity;
+               // console.log(opacity)
+            }
+            else
+            {
+                clearInterval(IntervalID);
+            }
+        }
+        function existance()
+        {
+            
+            var img = document.getElementById("img");
+            opacity =Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity<1)
+            {
+                opacity = opacity+0.1
+                document.getElementById("img").style.opacity=opacity;
+               // console.log(opacity)
+            }
+            else
+            {
+                clearInterval(IntervalID);
+            }
+        }
+
+            
+        </script>
+        <body>
+            
+            <button onclick="fadeout()">Fade Out</button>
+            <br><br>
+            <img id="img" src="images/nayeemsadia.png" width="500"/>
+            <br><br>
+            <button onclick="fadein()">Fade In</button>
+        </body>
+
+    </head>
+</html>

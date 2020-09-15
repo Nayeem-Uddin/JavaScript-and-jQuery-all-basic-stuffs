@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+        
+            function buttonclicked()
+            {
+                var a = document.getElementById("text1").value;
+                var b = document.getElementById("text2").value;
+                document.getElementById("operation").innerHTML="Result is : "+(a+b);
+                //console.log(a+b);
+            }
+
+        </script>
+
+        <body>
+            
+            <input type="text" id="text1" placeholder="input1">
+            <br><br>
+            <input type="text" id="text2" placeholder="input2">
+            <br><br>
+
+            <button onclick="buttonclicked()">submit</button>
+            <h2 id="operation">Result is: </h2>
+        </body>
+    </head>
+</html>

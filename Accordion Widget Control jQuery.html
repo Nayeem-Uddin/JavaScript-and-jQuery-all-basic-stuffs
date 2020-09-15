@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="cs/style.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.structure.css">
+        <link rel="stylesheet" href="2jquery/jquery/jquery-ui.theme.css">
+
+
+    </head>
+        <h2>Accordion Widget Control in jQuery</h2>
+        <div id="sectors">
+
+            <h3>Python</h3>
+            <p>I learned python from <b>telusko channel</b>. It is such a great 
+            youtube channel that I have ever seen inmy life and such a great 
+            channel.</p>
+
+            <h3>JS and jQuery</h3>
+            <p>I learned JS and jquery from <b>telusko channel</b>. It is such a great 
+            youtube channel that I have ever seen inmy life and such a great 
+            channel.This channel is the best channel which help me a lot to learn
+            many thing.I actully really feel lucky to having with you Tanmoy.</p>
+
+            <h3>Java</h3>
+            <p>I learned python from <b>Anisul Islam channel</b>. It is such a great 
+            youtube channel that I have ever seen inmy life and such a great 
+            channel.</p>
+
+
+
+        </div>
+        
+    <body>
+        
+    </body>
+    <script src="1jquery.js"></script>
+    <script src="2jquery/jquery/jquery-ui.js"></script>
+    <script>
+     $("#sectors").accordion({
+         collapsible : true,
+         active : 1,
+         heightStyle : true,
+         //event : "mouseover"
+         event : "click",
+         animate : 1000,
+         icons : {header : "ui-icon-plus", activeHeader : "ui-icon-minus"}
+
+
+     });
+
+
+    </script>
+</html>
